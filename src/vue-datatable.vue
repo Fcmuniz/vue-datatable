@@ -118,7 +118,7 @@ export default {
 			return this.columns.map(function(column){
 				var sortable = typeof column.sortable === 'undefined' ? true : column.sortable;
 				sortable = column.component ? false : sortable;
-				
+
 				var filterable = typeof column.filterable === 'undefined' ? true : column.filterable;
 				filterable = column.component ? false : filterable;
 
@@ -150,7 +150,7 @@ export default {
 
 			const sort_asc =
 				head_column.id === this.store.sort_by && this.store.sort_dir === 'asc';
-			
+
 			const sort_dsc =
 				head_column.id === this.store.sort_by && this.store.sort_dir === 'dsc';
 
